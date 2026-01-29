@@ -1,10 +1,10 @@
 # handlebars
-![workflow](https://github.com/steeringwaves/go-handlebars/actions/workflows/test.yml/badge.svg)
-[![Go Reference](https://pkg.go.dev/badge/github.com/steeringwaves/go-handlebars.svg)](https://pkg.go.dev/github.com/steeringwaves/go-handlebars)
+![workflow](https://github.com/pavelsmejkal/go-handlebars/actions/workflows/test.yml/badge.svg)
+[![Go Reference](https://pkg.go.dev/badge/github.com/pavelsmejkal/go-handlebars.svg)](https://pkg.go.dev/github.com/pavelsmejkal/go-handlebars)
 
 Handlebars for [golang](https://golang.org) with the same features as [handlebars.js](http://handlebarsjs.com). Hard fork of [handlebars](https://github.com/flowchartsman/handlebars) which was a fork of [Raymond](https://github.com/aymerick/raymond) to modularize and keep up with handlebars development. This version is incompatible with the previous projects (no more global storage to allow more flexibility in deployment), you must use `handlebars.New()` to get a handlebars instance.
 
-![Handlebars Logo](https://github.com/steeringwaves/go-handlebars/blob/master/handlebars-gopher.png?raw=true "Handlebars")
+![Handlebars Logo](https://github.com/pavelsmejkal/go-handlebars/blob/master/handlebars-gopher.png?raw=true "Handlebars")
 
 
 # Table of Contents
@@ -60,7 +60,7 @@ TODO document `handlebars.NewTemplater()`
 
 ## Quick Start
 
-    $ go get github.com/steeringwaves/go-handlebars
+    $ go get github.com/pavelsmejkal/go-handlebars
 
 The quick and dirty way of rendering a handlebars template:
 
@@ -70,7 +70,7 @@ package main
 import (
     "fmt"
 
-    "github.com/steeringwaves/go-handlebars"
+    "github.com/pavelsmejkal/go-handlebars"
 )
 
 func main() {
@@ -121,7 +121,7 @@ package main
 import (
     "fmt"
 
-    "github.com/steeringwaves/go-handlebars
+    "github.com/pavelsmejkal/go-handlebars
 )
 
 func main() {
@@ -209,7 +209,7 @@ package main
 import (
   "fmt"
 
-  "github.com/steeringwaves/go-handlebars
+  "github.com/pavelsmejkal/go-handlebars
 )
 
 func main() {
@@ -1348,7 +1348,7 @@ package main
 import (
     "fmt"
 
-    "github.com/steeringwaves/go-handlebars/lexer"
+    "github.com/pavelsmejkal/go-handlebars/lexer"
 )
 
 func main() {
@@ -1390,8 +1390,8 @@ package main
 import (
     "fmt"
 
-    "github.com/steeringwaves/go-handlebars/ast"
-    "github.com/steeringwaves/go-handlebars/parser"
+    "github.com/pavelsmejkal/go-handlebars/ast"
+    "github.com/pavelsmejkal/go-handlebars/parser"
 )
 
 fu  nc main() {

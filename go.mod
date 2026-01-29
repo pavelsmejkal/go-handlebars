@@ -1,4 +1,4 @@
-module github.com/steeringwaves/go-handlebars
+module github.com/pavelsmejkal/go-handlebars
 
 go 1.16
 
