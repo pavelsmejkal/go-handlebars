@@ -204,5 +204,5 @@ var subexpressionsTests = []Test{
 }
 
 func TestSubexpressions(t *testing.T) {
-	launchTests(t, subexpressionsTests)
+	launchTests(t, subexpressionsTests...)
 }

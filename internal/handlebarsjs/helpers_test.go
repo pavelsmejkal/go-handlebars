@@ -662,5 +662,5 @@ var helpersTests = []Test{
 }
 
 func TestHelpers(t *testing.T) {
-	launchTests(t, helpersTests)
+	launchTests(t, helpersTests...)
 }

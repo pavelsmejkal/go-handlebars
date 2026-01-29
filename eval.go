@@ -593,14 +593,15 @@ func (v *evalVisitor) callFunc(name string, funcVal reflect.Value, options *Opti
 	// @todo Is there a better way to do that ?
 	strType := reflect.TypeOf("")
 	boolType := reflect.TypeOf(true)
+	optionsType := reflect.TypeOf(options)
 
 	// check parameters number
 	addOptions := false
 	numIn := funcType.NumIn()
 
-	if numIn == len(params)+1 {
+	if numIn == len(params)+1 || (numIn <= len(params) && numIn > 0) {
 		lastArgType := funcType.In(numIn - 1)
-		if reflect.TypeOf(options).AssignableTo(lastArgType) {
+		if lastArgType.AssignableTo(optionsType) {
 			addOptions = true
 		}
 	}
@@ -624,6 +625,11 @@ func (v *evalVisitor) callFunc(name string, funcVal reflect.Value, options *Opti
 				// @todo Maybe we can panic on that
 				return reflect.Zero(strType)
 			}
+		}
+
+		// support passing options as last argument that would capture remaining params
+		if addOptions && argType.AssignableTo(optionsType) && i == numIn-1 {
+			break
 		}
 
 		if !arg.Type().AssignableTo(argType) {

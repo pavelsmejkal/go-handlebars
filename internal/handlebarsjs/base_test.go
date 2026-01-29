@@ -25,7 +25,7 @@ type Test struct {
 	output   interface{}
 }
 
-func launchTests(t *testing.T, tests []Test) {
+func launchTests(t *testing.T, tests ...Test) {
 	t.Parallel()
 
 	for _, test := range tests {

@@ -614,7 +614,7 @@ var basicTests = []Test{
 }
 
 func TestBasic(t *testing.T) {
-	launchTests(t, basicTests)
+	launchTests(t, basicTests...)
 }
 
 func TestBasicErrors(t *testing.T) {
