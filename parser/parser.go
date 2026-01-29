@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"strconv"
 
-	"github.com/steeringwaves/go-handlebars/ast"
-	"github.com/steeringwaves/go-handlebars/lexer"
+	"github.com/pavelsmejkal/go-handlebars/ast"
+	"github.com/pavelsmejkal/go-handlebars/lexer"
 )
 
 // References:

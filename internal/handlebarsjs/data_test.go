@@ -3,7 +3,7 @@ package handlebarsjs
 import (
 	"testing"
 
-	"github.com/steeringwaves/go-handlebars"
+	"github.com/pavelsmejkal/go-handlebars"
 )
 
 // Those tests come from:
