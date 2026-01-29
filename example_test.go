@@ -3,7 +3,7 @@ package handlebars_test
 import (
 	"fmt"
 
-	"github.com/steeringwaves/go-handlebars"
+	"github.com/pavelsmejkal/go-handlebars"
 )
 
 func Example() {

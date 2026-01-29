@@ -3,7 +3,7 @@ package parser
 import (
 	"regexp"
 
-	"github.com/steeringwaves/go-handlebars/ast"
+	"github.com/pavelsmejkal/go-handlebars/ast"
 )
 
 // whitespaceVisitor walks through the AST to perform whitespace control

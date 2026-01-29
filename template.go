@@ -7,8 +7,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/steeringwaves/go-handlebars/ast"
-	"github.com/steeringwaves/go-handlebars/parser"
+	"github.com/pavelsmejkal/go-handlebars/ast"
+	"github.com/pavelsmejkal/go-handlebars/parser"
 )
 
 // Template represents a handlebars template.
