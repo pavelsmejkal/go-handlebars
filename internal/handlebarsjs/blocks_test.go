@@ -2,10 +2,9 @@ package handlebarsjs
 
 import "testing"
 
-//
 // Those tests come from:
-//   https://github.com/wycats/handlebars.js/blob/master/spec/blocks.js
 //
+//	https://github.com/wycats/handlebars.js/blob/master/spec/blocks.js
 var blocksTests = []Test{
 	{
 		"array (1) - Arrays iterate over the contents when not empty",
@@ -204,5 +203,5 @@ var blocksTests = []Test{
 }
 
 func TestBlocks(t *testing.T) {
-	launchTests(t, blocksTests)
+	launchTests(t, blocksTests...)
 }

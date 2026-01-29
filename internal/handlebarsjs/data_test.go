@@ -295,5 +295,5 @@ var dataTests = []Test{
 }
 
 func TestData(t *testing.T) {
-	launchTests(t, dataTests)
+	launchTests(t, dataTests...)
 }
