@@ -2,10 +2,9 @@ package handlebarsjs
 
 import "testing"
 
-//
 // Those tests come from:
-//   https://github.com/wycats/handlebars.js/blob/master/spec/whitespace-control.js
 //
+//	https://github.com/wycats/handlebars.js/blob/master/spec/whitespace-control.js
 var whitespaceControlTests = []Test{
 	{
 		"should strip whitespace around mustache calls (1)",
@@ -255,5 +254,5 @@ var whitespaceControlTests = []Test{
 }
 
 func TestWhitespaceControl(t *testing.T) {
-	launchTests(t, whitespaceControlTests)
+	launchTests(t, whitespaceControlTests...)
 }

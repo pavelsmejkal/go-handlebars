@@ -38,6 +38,16 @@ func gnakHelper(nb int) string {
 	return result
 }
 
+func variadicHelper(options *Options) string {
+	params := options.Params()
+
+	result := ""
+	for i := 0; i < len(params); i++ {
+		result += Str(params[i])
+	}
+	return result
+}
+
 //
 // Tests
 //
@@ -99,6 +109,14 @@ var helperTests = []Test{
 		map[string]interface{}{"echo": echoHelper},
 		nil,
 		`GnAK!GnAK!GnAK!`,
+	},
+	{
+		"helper with variadic parameters",
+		`{{variadic "GnAK!" 3 false}}`,
+		nil, nil,
+		map[string]interface{}{"variadic": variadicHelper},
+		nil,
+		`GnAK!3false`,
 	},
 	{
 		"#if helper with true literal",
